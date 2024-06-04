@@ -11,6 +11,9 @@
 body {
     font-family: 'Roboto';
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .hero-main-txt {
@@ -39,12 +42,14 @@ body {
 }
 
 header {
+    width: 100%;
     display: flex;
     background-color: var(--dark-bg-clr);
     color: var(--scndry-clr);
     justify-content: space-between;
     align-items: center;
     padding: 1rem 16rem;
+    position: fixed;
 }
 header ul {
     display: flex;
@@ -54,7 +59,7 @@ header ul {
 
 .hero {
     display: flex;
-    padding: 8rem 16rem;
+    padding: 12rem 16rem 8rem 16rem;
     background-color: var(--dark-bg-clr);
     color: var(--scndry-clr);
     justify-content: space-between;
@@ -75,7 +80,7 @@ header ul {
     align-items: center;
     background-color: #6d747d;
     color: var(--scndry-clr);
-    flex-basis: 400px;
+    flex-basis: 480px;
 }
 
 .primary-button {
@@ -84,5 +89,84 @@ header ul {
     color: var(--text-clr);
     font-weight: 600;
     padding: 0.5rem 2rem;
-    border-radius: 4px;
+    border-radius: 8px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.illustration {
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--cta-bg-clr);
+    border-radius: 8px;
+}
+
+.info__content {
+    display: flex;
+    justify-content: center;
+}
+
+.info__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    color: #6d747d;
+}
+
+.info__item p {
+    width: clamp(10ch, 80%, 32ch);
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 16rem;
+    background-color: var(--scndry-clr);
+    gap: 8px;
+}
+
+.quote__author {
+    color: var(--dark-bg-clr);
+    align-self: flex-end;
+}
+
+.cta {
+    background-color: var(--cta-bg-clr);
+    display: flex;
+    color: white;
+    margin: 0 16rem;
+    align-items: center;
+    padding: 4rem 8rem;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.quote-txt p {
+    color: var(--text-clr);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--dark-bg-clr);
+    color: var(--text-clr);
 }
